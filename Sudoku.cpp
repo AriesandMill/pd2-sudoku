@@ -147,7 +147,15 @@ void Sudoku::solve()
 	if(fu==81)
 	{
 		cout<<"1"<<endl;
-		transform();
+		if(re==1)
+		 Sudo(arr,0);
+		 for (i=0;i<9;i++){
+			          cout<<endl;
+			         for (j=0;j<9;j++)
+				              cout << arr[i][j] << " ";
+			                       }
+		         cout << endl;
+
 		exit(1);
 	}
 	Sudo(arr,0);
